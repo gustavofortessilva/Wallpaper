@@ -1,0 +1,74 @@
+@charset "UTF-8";
+@media screen and (max-width:899px){
+    section#menu{
+        width: 80vw;
+    }
+}
+@media screen and (min-width:900px){
+    section#menu{
+        width: calc(900px*0.8);
+    }
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+main, body{
+    width: 100vw;
+    height: 100vh;
+    
+}
+body{
+    background: white no-repeat center center;
+    background-size: cover;
+}
+main{
+    position: relative;
+}
+section#button{
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border: 5px solid #333;
+    border-radius: 50%;
+    position: absolute;
+    /* display: none; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section#menu{
+    height: 300px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 20px;
+    box-shadow: 0px 0px 13px #00000042;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    gap: 15px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+section#menu div{
+    width: 100px;  
+    height: 100px;
+    border: 5px solid #4d4d4d;
+    border-radius: 50%;
+}
+div#img-paisagem{
+    background: url(../images/paisagem.jpg) center center no-repeat;
+    background-size: cover;
+}
+div#img-predios{
+    background: url(../images/predios.jpg) center center no-repeat;
+    background-size: cover;
+}
+div#img-tigre{
+    background: url(../images/tigre.jpg) center center no-repeat;
+    background-size: cover;
+}
